@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Speed Typer</title>
+</head>
+<body>
+    <div class="settings" id="settings">
+        <form id="settings-form" class="settings-form">
+            <div>
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    
+    <div id="continer" class="container">
+        <h2>👨‍💻 Speed Typer 👨‍💻</h2>
+        <small>Type the following:</small>
+        <h1 id="word" class="word"></h1>
+        <input type="text" id="text" class="text" autocomplete="off" placeholder="Type the word here...">
+        <p id="time-container" class="time-container">Time Left: <span id="time" class="time">10s</span></p>
+        <p id="score-container" class="score-container">Score: <span id="score" class="score">0</span></p>
+        <div id="end-game-container" class="end-game-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
